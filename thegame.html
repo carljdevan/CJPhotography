@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Game | CJ photography</title>
+    <script src="game.js" async></script>
+    <link rel="stylesheet" href="thegame.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae82aab47a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <nav class="navbar">
+        <a href="index.html">
+          <img class="logo" src="images/logo.jpg" alt="">
+        </a>
+        <img class="CJlogo" src="images/cjlogo.jpg" alt="">
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html"><img class="navpic" src="images/aboutme.jpeg" alt=""><span><br>About Me</span></a></li>
+          <li><a href="theworks.html"><img class="navpic" src="images/street.jpg" alt=""><span><br>The Works</span></a></li>
+          <li><a href="thegear.html"><img class="navpic"src="images/mygear.jpg" alt=""><span><br>The Gear<span></a></li>
+          <li><a href="thegame.html"><img class="navpic" src="images/game.jpg" alt=""><span><br>The Game</span></a></li>
+          <li><a href="theshop.html"><img class="navpic"src="images/shop.jpg" alt=""><span><br>The Shop</span></a></li>
+          <li><a href="reachme.html"><img class="navpic" src="images/reachme.jpg" alt=""><span><br>Reach Me</span></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1 class="game-title">Picture It</h1>
+    <h3 class="game-description">A minute. Don't forget it.</h3>
+
+    <div class="overlay-text visible">
+      Click to Start
+    </div>
+    <div id="game-over-text" class="overlay-text">
+      Try Again :(
+      <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div id="victory-text" class="overlay-text">
+      Victory :)
+      <span class="overlay-text-small">Click to Restart</span>
+    </div>
+
+    <div class="game-container">
+      <div class="game-info-container">
+        <div class="game-info">
+          Time <span id="time-remaining">60</span>
+        </div>
+        <div class="game-info">
+          Flips <span id="flips">0</span>
+        </div>
+      </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/drone.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/drone.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/filmroll.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/filmroll.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/camcorder.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/camcorder.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/camera.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/camera.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/flash.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/flash.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/film.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/film.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/oldcamera.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/oldcamera.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/selfie.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-back card-face">
+            <p class="question-mark">?</p>
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="images/selfie.png" alt="">
+          </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    const togglebutton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks=document.getElementsByClassName('navbar-links')[0]
+
+    togglebutton.addEventListener('click',()=>{
+      navbarLinks.classList.toggle('active')
+    })
+    </script>
+
+  </body>
+</html>

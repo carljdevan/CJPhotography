@@ -1,0 +1,297 @@
+html,body {
+  height:100%;
+  overflow-x:hidden;
+  margin:0;
+  padding:0;
+  max-width:100%;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  background-color: white;
+}
+
+.navbar {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  position: sticky;
+}
+
+.logo {
+  max-height: 150px;
+  margin: 10px;
+  top: 0;
+  left: 0;
+}
+
+.CJlogo {
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -170px;
+  padding-bottom: 10px;
+}
+
+.navbar-links ul{
+  margin:0;
+  padding:0;
+  display:flex;
+}
+.navbar-links li{
+  list-style: none;
+}
+.navbar-links li a{
+  text-decoration: none;
+  color:black;
+  padding:2rem;
+  display:block;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.toggle-button{
+  position:absolute;
+  top:2.0rem;
+  right:1rem;
+  display:none;
+  flex-direction:column;
+  justify-content: space-between;
+  width:40px;
+  height:32px;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+
+.toggle-button .bar{
+  height:3px;
+  width:100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.toggle-button{
+  display:flex
+}
+
+.navbar-links{
+  display:none;
+  width:100%;
+}
+
+.navbar{
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+.navbar-links ul{
+  width:100%;
+  flex-direction:column;
+}
+
+.navbar-links li{
+  text-align: center;
+}
+
+.navbar-links li a{
+  padding: 1rem 1rem
+}
+
+.navbar-links.active{
+  display:flex;
+  background-color: white;
+}
+
+.navpic{
+  height:100px;
+  width:auto;
+}
+
+@media (max-width:600px) {
+  .homepano-info h1 .homepano-info h4{
+    font-size: 3vw;
+  }
+}
+
+.game-title {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 5em;
+  font-weight: 650;
+  letter-spacing: -4px;
+  margin: 0px;
+  padding-top: 50px;
+  border: 0px;
+}
+
+.game-description {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 2em;
+  font-weight: 550;
+  letter-spacing: -1px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.game-start {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  letter-spacing: -1px;
+  padding-top: 10px;
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  font-family: 'Inter', sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin: 50px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.card {
+  position: relative;
+  height: 175px;
+  width: 175px;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  transition: transform 500ms ease-in-out;
+}
+
+.card.visible .card-back {
+  transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+  transform: rotateY(0);
+}
+
+.card.matched .card-value {
+  font-size: 8em;
+  animation: dance 1s linear infinite;
+}
+
+@keyframes dance {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+.card-back {
+  background-color: black;
+  border-color: white;
+}
+
+.card-front {
+  background-color: #FFFDD0;
+  border-color: black;
+  transform: rotateY(180deg);
+}
+
+.card-value {
+  transition: transform 100ms ease-in-out;
+  transform: scale(1);
+}
+
+.card-front:hover .card-value {
+  transform: scale(1.1);
+}
+
+.question-mark {
+  align-self: flex-start;
+  transform: translateY(-10px);
+  color: white;
+  font-size: 8em;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  border: 0px;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  transition: transform 100ms ease-in-out;
+}
+
+.card-back:hover .question-mark {
+  transform: translateY(0);
+}
+
+.overlay-text {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: white;
+}
+
+.overlay-text-small {
+  font-size: .3em;
+}
+
+.overlay-text.visible {
+  display: flex;
+  flex-direction: column;
+  animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 7em;
+
+  }
+}
+
+@media (max-width: 600px) {
+  .game-container {
+    grid-template-columns: repeat(2, auto)
+  }
+  .game-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

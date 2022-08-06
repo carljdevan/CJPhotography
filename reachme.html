@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reach Me | CJ photography</title>
+    <link rel="stylesheet" href="reachme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+      <a href="index.html">
+        <img class="logo" src="images/logo.jpg" alt="">
+      </a>
+      <img class="CJlogo" src="images/cjlogo.jpg" alt="">
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="index.html"><img class="navpic" src="images/aboutme.jpeg" alt=""><span><br>About Me</span></a></li>
+        <li><a href="theworks.html"><img class="navpic" src="images/street.jpg" alt=""><span><br>The Works</span></a></li>
+        <li><a href="thegear.html"><img class="navpic"src="images/mygear.jpg" alt=""><span><br>The Gear<span></a></li>
+        <li><a href="thegame.html"><img class="navpic" src="images/game.jpg" alt=""><span><br>The Game</span></a></li>
+        <li><a href="theshop.html"><img class="navpic"src="images/shop.jpg" alt=""><span><br>The Shop</span></a></li>
+        <li><a href="reachme.html"><img class="navpic" src="images/reachme.jpg" alt=""><span><br>Reach Me</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="reachmepano">
+    <img class="reachmepano-img" src="images/theshoppano.jpg" alt="">
+    <div class="reachmepano-info">
+      <h1>Reach Me</h1>
+      <h4>OnlyFans? No. OnlyFriends.</h4>
+    </div>
+  </div>
+
+    <div class="container">
+      <h1>Say Hi</h1>
+      <form action="https://formsubmit.co/carljdevan@gmail.com" method="POST">
+        <input class="formtxt" type="text" name="Name" placeholder="Name*" required>
+        <input class="formtxt" type="email" name="Email" placeholder="Email*" required>
+        <select name="photographer" required>
+          <option>Amateur Photographer</option>
+          <option>Professional Photographer</option>
+          <option>Hobbyist</option>
+          <option>N.A.</option>
+        </select>
+        <textarea name="Query" placeholder="Message*" required></textarea>
+        <button type="submit">Send</button>
+        <br>
+      </form>
+    </div>
+
+    <h1 class="table-header">Weekly Schedule</h1>
+    <table class="table" border="1">
+        <tr>
+            <th></th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+        </tr>
+        <tr>
+            <td>9-11</td>
+            <td class="used-table">
+              <img class="table-img" src="images/rafflesplace.jpeg" alt="">
+              Morning Shoot @ Raffles Place
+            </td>
+            <td class="free-table"></td>
+            <td class="used-table">
+              <img class="table-img" src="images/tiongbahru.jpeg" alt="">
+              Morning Shoot @ Tiong Bahru
+            </td>
+            <td class="free-table" colspan="2"></td>
+            <td class="used-table" rowspan="2">
+              <img class="table-img" src="images/chinatown.jpeg" alt="">
+              Morning Shoot @ Chinatown
+            </td>
+            <td class="free-table"></td>
+        </tr>
+        <tr>
+            <td>11-1</td>
+            <td class="free-table" colspan="4"></td>
+            <td class="free-table"></td>
+            <td class="used-table" rowspan="2">
+              <img class="table-img" src="images/littleindia.jpeg" alt="">
+              Sunday Shoot @ Little India
+            </td>
+        </tr>
+        <tr>
+          <td>1-3</td>
+          <td class="free-table" colspan="3"></td>
+          <td class="used-table">
+            <a href="https://www.youtube.com/watch?v=bN2jqsJgbBs" target="_blank">
+              <img class="table-img" src="images/lightroom.jpeg" alt="">
+            </a>
+            Lightroom Editing
+          </td>
+          <td class="free-table" colspan="2"></td>
+        </tr>
+        <tr>
+          <td>3-5</td>
+          <td class="free-table" colspan="7"></td>
+        </tr>
+        <tr>
+          <td>5-7</td>
+          <td class="free-table"></td>
+          <td class="used-table">
+            <img class="table-img" src="images/woodlandswaterfront.jpeg" alt="">
+            Golden Hour @ Woodlands Waterfront
+          </td>
+          <td class="free-table" colspan="2"></td>
+          <td class="used-table">
+            <img class="table-img" src="images/kampongglam.jpeg" alt="">
+            Golden Hour @ Kampong Glam
+          </td>
+          <td class="free-table" colspan="2"></td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+    const togglebutton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks=document.getElementsByClassName('navbar-links')[0]
+
+    togglebutton.addEventListener('click',()=>{
+      navbarLinks.classList.toggle('active')
+    })
+    </script>
+</body>
+</html>

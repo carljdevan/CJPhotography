@@ -1,0 +1,196 @@
+html,body {
+  height:100%;
+  overflow-x:hidden;
+  margin:0;
+  padding:0;
+  max-width:100%;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  background-color: black;
+}
+
+.navbar {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  position: sticky;
+}
+
+.logo {
+  max-height: 150px;
+  margin: 10px;
+  top: 0;
+  left: 0;
+}
+
+.CJlogo {
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -170px;
+  padding-bottom: 10px;
+}
+
+.navbar-links ul{
+  margin:0;
+  padding:0;
+  display:flex;
+}
+.navbar-links li{
+  list-style: none;
+}
+.navbar-links li a{
+  text-decoration: none;
+  color:black;
+  padding:2rem;
+  display:block;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.toggle-button{
+  position:absolute;
+  top:2.0rem;
+  right:1rem;
+  display:none;
+  flex-direction:column;
+  justify-content: space-between;
+  width:40px;
+  height:32px;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+
+.toggle-button .bar{
+  height:3px;
+  width:100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.toggle-button{
+  display:flex
+}
+
+.navbar-links{
+  display:none;
+  width:100%;
+}
+
+.navbar{
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+.navbar-links ul{
+  width:100%;
+  flex-direction:column;
+}
+
+.navbar-links li{
+  text-align: center;
+}
+
+.navbar-links li a{
+  padding: 1rem 1rem
+}
+
+.navbar-links.active{
+  display:flex;
+  background-color: white;
+}
+
+.navpic{
+  height:100px;
+  width:auto;
+}
+
+.homepano {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.homepano-img {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.homepano-info {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50.5%, -150%);
+  margin: 0px;
+  padding-bottom:15px;
+  border: 0px;
+}
+
+.homepano-info h1 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 4vw;
+  font-weight: 650;
+  letter-spacing: -2px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.homepano-info h4 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.8em;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+@media (max-width:600px) {
+  .homepano-info h1 .homepano-info h4{
+    font-size: 3vw;
+  }
+}
+
+.profilepic {
+  width: 40%;
+  z-index: 1;
+}
+
+.aboutme {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  z-index: 1;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3vw;
+}
+
+.instagram p {
+  color: white;
+}
+
+.instagram {
+  margin-top: 15px;
+}
+
+.YT-video {
+  margin-bottom: 50px;
+}
+
+.YT-video h1 {
+  margin-top: 150px;
+  color: white;
+  font-weight: 500;
+  font-size: 3em;
+  padding-bottom: 5px;
+  letter-spacing: -1px;
+}

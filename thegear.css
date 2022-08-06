@@ -1,0 +1,281 @@
+html,body {
+  height:100%;
+  overflow-x:hidden;
+  margin:0;
+  padding:0;
+  max-width:100%;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  background-color: white;
+}
+
+.navbar {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  position: sticky;
+}
+
+.logo {
+  max-height: 150px;
+  margin: 10px;
+  top: 0;
+  left: 0;
+}
+
+.CJlogo {
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -170px;
+  padding-bottom: 10px;
+}
+
+.navbar-links ul{
+  margin:0;
+  padding:0;
+  display:flex;
+}
+.navbar-links li{
+  list-style: none;
+}
+.navbar-links li a{
+  text-decoration: none;
+  color:black;
+  padding:2rem;
+  display:block;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.toggle-button{
+  position:absolute;
+  top:2.0rem;
+  right:1rem;
+  display:none;
+  flex-direction:column;
+  justify-content: space-between;
+  width:40px;
+  height:32px;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+
+.toggle-button .bar{
+  height:3px;
+  width:100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.toggle-button{
+  display:flex
+}
+
+.navbar-links{
+  display:none;
+  width:100%;
+}
+
+.navbar{
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+.navbar-links ul{
+  width:100%;
+  flex-direction:column;
+}
+
+.navbar-links li{
+  text-align: center;
+}
+
+.navbar-links li a{
+  padding: 1rem 1rem
+}
+
+.navbar-links.active{
+  display:flex;
+  background-color: white;
+}
+
+.navpic{
+  height:100px;
+  width:auto;
+}
+
+.thegearpano {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.thegearpano-img {
+  width: 100%;
+  opacity: 0.8;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.thegearpano-info {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -160%);
+  margin: 0px;
+  padding-bottom:15px;
+  border: 0px;
+}
+
+.thegearpano-info h1 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 4vw;
+  font-weight: 650;
+  letter-spacing: -2px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.thegearpano-info h4 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.8em;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+@media (max-width:600px) {
+  .thegearpano-info h1 .thegearpano-info h4{
+    font-size: 3vw;
+  }
+}
+
+.sonya7 {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.sonya7-text {
+  flex: 1;
+  margin-left: 10px;
+  margin-bottom: 80px;
+}
+
+.sonya7-img img{
+  max-width: 550px;
+  flex: 1;
+  margin-left: 150px;
+}
+
+@media (max-width:600px) {
+  .sonya7 {
+    flex-direction: column;
+  }
+}
+
+.sonya77 {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.sonya77-img img {
+  max-width: 550px;
+  margin-top: 0px;
+  flex: 1;
+  margin-right: 175px;
+}
+
+.sonya77-text {
+  flex: 1;
+  margin-right: 10px;
+}
+
+@media (max-width:600px) {
+  .sonya77 {
+    flex-direction: column;
+  }
+}
+
+.nikonf80 {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.nikonf80-text {
+  flex: 1;
+  margin-top: 80px;
+  margin-left: -20px;
+}
+
+.nikonf80-img img{
+  max-width: 550px;
+  flex: 1;
+  margin-left: 180px;
+}
+
+@media (max-width:600px) {
+  .nikonf80 {
+    flex-direction: column;
+  }
+}
+
+.mavicair {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.mavicair-img img {
+  max-width: 600px;
+  flex: 1;
+  margin-right: 175px;
+  margin-top: 50px;
+}
+
+.mavicair-text {
+  flex: 1;
+  margin-right: 10px;
+}
+
+@media (max-width:600px) {
+  .mavicair {
+    flex-direction: column;
+  }
+}
+
+.gopro {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.gopro-text {
+  flex: 1;
+  margin-left: -20px;
+}
+
+.gopro-img img{
+  max-width: 500px;
+  flex: 1;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+@media (max-width:600px) {
+  .gopro {
+    flex-direction: column;
+  }
+}
