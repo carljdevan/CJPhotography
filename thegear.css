@@ -178,6 +178,10 @@ html,body {
   margin-left: 150px;
 }
 
+.sonya7-img:hover {
+  transform: scale(1.05);
+}
+
 @media (max-width:600px) {
   .sonya7 {
     flex-direction: column;
@@ -195,6 +199,10 @@ html,body {
   margin-top: 0px;
   flex: 1;
   margin-right: 175px;
+}
+
+.sonya77-img:hover {
+  transform: scale(1.05);
 }
 
 .sonya77-text {
@@ -226,6 +234,10 @@ html,body {
   margin-left: 180px;
 }
 
+.nikonf80-img:hover {
+  transform: scale(1.05);
+}
+
 @media (max-width:600px) {
   .nikonf80 {
     flex-direction: column;
@@ -243,6 +255,10 @@ html,body {
   flex: 1;
   margin-right: 175px;
   margin-top: 50px;
+}
+
+.mavicair-img:hover {
+  transform: scale(1.05);
 }
 
 .mavicair-text {
@@ -272,6 +288,10 @@ html,body {
   flex: 1;
   margin-left: 200px;
   margin-top: 20px;
+}
+
+.gopro-img:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width:600px) {
