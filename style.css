@@ -17,6 +17,12 @@ html,body {
   position: sticky;
 }
 
+@media (max-width:500px) {
+  .navbar {
+    scale
+  }
+}
+
 .logo {
   max-height: 150px;
   margin: 10px;
@@ -111,8 +117,8 @@ html,body {
   text-align: center;
   color: white;
   margin: 0px;
-  padding: 0px;
   border: 0px;
+  padding: 0px;
 }
 
 .homepano-img {
@@ -123,13 +129,10 @@ html,body {
 }
 
 .homepano-info {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50.5%, -150%);
-  margin: 0px;
-  padding-bottom:15px;
-  border: 0px;
+  transform: translate(-50%, -50%);
 }
 
 .homepano-info h1 {
@@ -154,24 +157,21 @@ html,body {
   border: 0px;
 }
 
-@media (max-width:600px) {
-  .homepano-info h1 .homepano-info h4{
-    font-size: 3vw;
-  }
-}
-
 .profilepic {
   width: 40%;
   z-index: 1;
+  margin-top: 100px;
 }
 
 .aboutme {
   margin-top: 100px;
   margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
   z-index: 1;
   color: white;
   font-family: 'Inter', sans-serif;
-  font-size: 1.3vw;
+  font-size: 1em;
 }
 
 .instagram p {
@@ -180,17 +180,4 @@ html,body {
 
 .instagram {
   margin-top: 15px;
-}
-
-.YT-video {
-  margin-bottom: 50px;
-}
-
-.YT-video h1 {
-  margin-top: 150px;
-  color: white;
-  font-weight: 500;
-  font-size: 3em;
-  padding-bottom: 5px;
-  letter-spacing: -1px;
 }

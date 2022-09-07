@@ -124,13 +124,10 @@ html,body {
 }
 
 .thegearpano-info {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -160%);
-  margin: 0px;
-  padding-bottom:15px;
-  border: 0px;
+  transform: translate(-50%, -50%);
 }
 
 .thegearpano-info h1 {
@@ -164,138 +161,79 @@ html,body {
 .sonya7 {
   display: flex;
   margin-bottom: 50px;
-}
-
-.sonya7-text {
-  flex: 1;
-  margin-left: 10px;
-  margin-bottom: 80px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .sonya7-img img{
   max-width: 550px;
-  flex: 1;
-  margin-left: 150px;
 }
 
 .sonya7-img:hover {
   transform: scale(1.05);
 }
 
-@media (max-width:600px) {
-  .sonya7 {
-    flex-direction: column;
-  }
-}
-
 .sonya77 {
   display: flex;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .sonya77-img img {
   max-width: 550px;
-  margin-top: 0px;
-  flex: 1;
-  margin-right: 175px;
 }
 
 .sonya77-img:hover {
   transform: scale(1.05);
 }
 
-.sonya77-text {
-  flex: 1;
-  margin-right: 10px;
-}
-
-@media (max-width:600px) {
-  .sonya77 {
-    flex-direction: column;
-  }
-}
-
 .nikonf80 {
   display: flex;
-  margin-top: 80px;
-  margin-bottom: 100px;
-}
-
-.nikonf80-text {
-  flex: 1;
-  margin-top: 80px;
-  margin-left: -20px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .nikonf80-img img{
   max-width: 550px;
-  flex: 1;
-  margin-left: 180px;
 }
 
 .nikonf80-img:hover {
   transform: scale(1.05);
 }
 
-@media (max-width:600px) {
-  .nikonf80 {
-    flex-direction: column;
-  }
-}
-
 .mavicair {
   display: flex;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .mavicair-img img {
   max-width: 600px;
-  flex: 1;
-  margin-right: 175px;
-  margin-top: 50px;
 }
 
 .mavicair-img:hover {
   transform: scale(1.05);
 }
 
-.mavicair-text {
-  flex: 1;
-  margin-right: 10px;
-}
-
-@media (max-width:600px) {
-  .mavicair {
-    flex-direction: column;
-  }
-}
-
 .gopro {
   display: flex;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.gopro-text {
-  flex: 1;
-  margin-left: -20px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .gopro-img img{
   max-width: 500px;
-  flex: 1;
-  margin-left: 200px;
-  margin-top: 20px;
 }
 
 .gopro-img:hover {
   transform: scale(1.05);
-}
-
-@media (max-width:600px) {
-  .gopro {
-    flex-direction: column;
-  }
 }
